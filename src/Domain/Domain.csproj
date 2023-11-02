@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>CleanArchitectureTemplate.Domain</RootNamespace>
+		<AssemblyName>CleanArchitectureTemplate.Domain</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Events\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MediatR" Version="12.1.1" />
+	  <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="7.0.13" />
+	</ItemGroup>
+
+</Project>

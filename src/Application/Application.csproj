@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>CleanArchitectureTemplate.Application</RootNamespace>
+        <AssemblyName>CleanArchitectureTemplate.Application</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="Common\Behaviours\" />
+        <Folder Include="Common\Constants\" />
+        <Folder Include="Common\Exceptions\" />
+        <Folder Include="Common\Extensions\" />
+        <Folder Include="Common\Validators\" />
+        <Folder Include="Common\Utils\" />
+        <Folder Include="Common\Security\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.13" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+</Project>
