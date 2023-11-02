@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace CleanArchitectureTemplate.Domain.Entities;
-public class ApplicationUserClaim
+
+public class ApplicationUserClaim : IdentityUserClaim<string>
 {
+    public virtual ApplicationUser User { get; set; } = null!;
 }

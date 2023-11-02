@@ -10,7 +10,6 @@
 
     <ItemGroup>
         <Folder Include="Common\Behaviours\" />
-        <Folder Include="Common\Constants\" />
         <Folder Include="Common\Exceptions\" />
         <Folder Include="Common\Extensions\" />
         <Folder Include="Common\Validators\" />
